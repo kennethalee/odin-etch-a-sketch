@@ -33,3 +33,7 @@ This project is a simple web-based Etch-a-Sketch application built using JavaScr
 ## Personal Thoughts
 
 It was a fun review of JS DOMs, HTML and CSS basics.
+
+## Live Preview
+
+[etch-a-sketch](https://kennethalee.github.io/odin-etch-a-sketch/)
