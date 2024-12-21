@@ -1,5 +1,12 @@
 const containerDiv = document.querySelector(".container");
 
+function getRandomColor() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+
+  return `rgb(${r}, ${g}, ${b})`;
+}
 function createGrid(gridSize) {
   containerDiv.innerHTML = "";
   const cellSize = Math.floor(400 / gridSize);
@@ -12,7 +19,7 @@ function createGrid(gridSize) {
     containerDiv.appendChild(gridCell);
 
     gridCell.addEventListener("mouseover", () => {
-      gridCell.style.backgroundColor = "black";
+      gridCell.style.backgroundColor = getRandomColor();
     });
   }
   containerDiv.style.width = `${cellSize * gridSize}px`;
